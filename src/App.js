@@ -3,13 +3,13 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 function Home() {
-  render(
+  return(
     <div>Home</div>
   )
 };
 
 function Login() {
-  render(
+  return(
     <div>Login</div>
   )
 };
