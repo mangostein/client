@@ -1,19 +1,31 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
-//stateless component
-function Header(props) {
-  return <h1>{props.string}</h1>
+function Home() {
+  render(
+    <div>Home</div>
+  )
 };
 
-//class component
+function Login() {
+  render(
+    <div>Login</div>
+  )
+};
+
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header string="client"/>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/login" component={Login}/>
+        </Switch>
       </div>
     );
   }
-}
+};
 
 export default App;
