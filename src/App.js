@@ -1,13 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
-
-function Home() {
-  return(
-    <div>Home</div>
-  )
-};
 
 class App extends React.Component {
   render() {
